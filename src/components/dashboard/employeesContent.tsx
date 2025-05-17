@@ -10,6 +10,7 @@ import useTokenBalances from '@/hooks/useBalance';
 import { toastConfig } from '@/utils/toast';
 import CreateRecipient from '../CreateRecipient';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 // API response type
 interface RecipientProfile {
@@ -281,13 +282,17 @@ export const EmployeesContent = () => {
                 </svg>
               </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-700">
+          <Link href="/leaveManagement" >
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-700">
               <polyline points="9 18 15 12 9 6" />
             </svg>
+          </Link>
+
+
           </div>
           <div className="mt-16 gap-2 flex items-center">
-            <h2 className="text-white text-3xl font-semibold">0</h2>
-            <p className="text-gray-500 text-sm">Pending payment</p>
+            <h2 className="text-white text-3xl font-semibold">4</h2>
+            <p className="text-gray-500 text-sm">Leave Request</p>
           </div>
         </div>
       </div>

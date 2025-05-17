@@ -371,6 +371,8 @@ export const PayrollContent = () => {
           </div>
         </div>
 
+        
+
         {/* Payment Section */}
         <div className={`col-span-full bg-black rounded-lg p-6 border border-[#2C2C2C] ${transitionClasses.card}`}>
           {/* Tabs */}
